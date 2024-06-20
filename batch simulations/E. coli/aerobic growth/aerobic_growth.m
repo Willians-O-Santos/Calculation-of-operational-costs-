@@ -69,7 +69,7 @@ kla = ((OUR./( 0.21 - 0.1))./3600);     % kLa in s-1
 Vsuper = ((Qair_out)./19.63);           % Superficial gas velocity in m/s
 
 % Gassed power input in W
-Ps = (((kla.*(((volume./1000).^0.7))./(0.002 *((Vsuper).^0.2)))).^(10/7)); % gassed power input %em W
+Ps = (((kla.*(((volume./1000).^0.7))./(0.002 *((Vsuper).^0.2)))).^(10/7)); % gassed power input in W
 
 % Energy consumption of the stirrer (kWh) for each time step:
 Es = (Ps./1000)*h;

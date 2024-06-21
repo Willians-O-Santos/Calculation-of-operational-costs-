@@ -46,7 +46,7 @@ EStotal = 136.1*t_OP;
 Cost_agi = EStotal*0.126;
 
 % Cost of cooling:
-So = 138.76;  %initial glucose concentration in mmol/L                              
+So = y(1,2);  %initial glucose concentration in mmol/L                              
 glucose_consumed = (So*volume)/1000;   % mols                                                                                
 EMtotal = (glucose_consumed*235)/3600;    % kWh                                                                      
 Cost_cool = (0.126/0.7)*(EStotal + EMtotal);

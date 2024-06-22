@@ -89,6 +89,7 @@ Em = Qheat*h;
 % Total energy consumption of the cooling system kWh:
 Em_seg = Em(1:(find((round(diff(concentration_X),4)<0.0001), 1)));
 Emtotal = sum(Em_seg); 
+
 Cost_cool = (0.126/0.7)*(Estotal + Emtotal);
 
 % Print results:

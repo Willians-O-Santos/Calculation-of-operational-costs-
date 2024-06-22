@@ -76,7 +76,8 @@ Es = (Ps./1000)*h;
 
 %total energy consumption of the stirrer kWh
 Es_seg = Es(1:(find((round(diff(concentration_X),4)<0.0001), 1)));
-Estotal = sum(Es_seg);           
+Estotal = sum(Es_seg);  
+
 Cost_agi = Estotal*0.126;
 
 % Cost of cooling:

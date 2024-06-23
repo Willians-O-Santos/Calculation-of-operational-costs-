@@ -1,2 +1,5 @@
 # Calculation-of-operational-costs-
-This repository has the MATLAB codes and instruction to calculate the bioreactor operation cost after a DFBA simulation
+
+This repository has the MATLAB codes to calculate the bioreactor operation cost, which is broken down as aeration, agitation and cooling costs. To run these codes it is necessary to first run the desired DFBA simulation, as the variables that are defined by running the DFBA simulation are used as inputs.
+
+The codes are organised in folders and sub-folders. First, they are separated by batch and fed-batch DFBA simulations, as that changes the final volume of the reactor and by extension, the absolute pressure in the air inlet. Then, by microorganism, as that changes the maximum air uptake rate. Next, they are separeted by growth and PHB phase, and specifically in the case of E. coli batch simulations, by aerobic and anaerobic conditions. Furthermore, the last point of the PHB phase of the fed-batch simulations has its own folder because calculations of its costs are done differently, as otherwise, it would take too long to run the code. So choose the code that matches the conditions of the DFBA simulation whose operation costs are to be calculated. 

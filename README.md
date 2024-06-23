@@ -1,4 +1,4 @@
-# Calculation-of-operational-costs-
+# Calculation of operational costs
 
 This repository has the MATLAB codes to calculate the bioreactor operation cost, which is broken down as aeration, agitation and cooling costs. To run these codes it is necessary to first run the desired DFBA simulation, as the variables that are defined by running the DFBA simulation are used as inputs.
 
